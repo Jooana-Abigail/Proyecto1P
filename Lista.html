@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="list.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>lista de treas</title>
+</head>
+
+<body>
+
+    <h1>LISTA DE TAREAS</h1>
+
+    <div class="datos">
+        <p id="total">Total tareas: 0</p>
+        <p id="completadas">Tareas Completadas: 0</p>
+        <div class="filtros">
+            <button id="filtro-todas" class="filtro-btn">Todas</button>
+            <button id="filtro-activas" class="filtro-btn">Activas</button>
+            <button id="filtro-completadas" class="filtro-btn">Completadas</button>
+        </div>
+    </div>
+
+    <div class="contenedor">
+
+        <form class="formulario" id="formulario">
+            <h4>Materias</h4>
+            <input type="text" id="tarea">
+            <input type="submit" value="Agregar">
+        </form>
+        <div class="tareas" id="tareas">
+        </div>
+    </div>
+            <div class="item-tarea">
+                <!--<div class="botones">
+                    <button class="eliminar" data-id="${item.id}"></button>
+                    <button class="completada" data-id="${item.id}"></button>
+                    <button class="editar" data-id="${item.id}">Editar</button>
+
+                </div>-->
+            </div>
+    <script src="list.js"></script>
+</body>
+
+</html>
